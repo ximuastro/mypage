@@ -83,12 +83,8 @@ img{
     height: 100px;   /*高さ*/ 
     background-color: #ddafddd7;  /*色*/
 }
-.wrapper{
-    max-width: 1300px;    /*横幅最大1100px*/
-    margin: 0 auto;       /*中央に配置する指定*/
-    padding: 0 4%;        /*スマートフォン向け余白の設定*/
-}
 
+/*スライドショー*/
 /*スライドショーの設定*/
 #top{
     position: relative;
@@ -99,7 +95,7 @@ img{
     width: 100%;
     height: 650px;
     overflow: hidden;
-    background-color: #0064c294;
+    background-color: #25002494;
 }
 @keyframes slideshow{
     0%{
@@ -141,31 +137,19 @@ img{
     animation-delay: 52s;
 }
 
-/*トップ画像についての設定*/
-/*#top{
-    background-image: url(images/slideshow/stars.jpg);  
-    background-size: cover;          
-    background-position: center center; 
-    background-blend-mode: hard-light;  
-    height: 500px;
-    margin-top: 100px;
-    min-width: 100vh;                  
-    margin-bottom: 15px;
-}*/
-#top .top-sentence{
+.top-sentence{
     position: absolute; /*配置*/
-    background: -webkit-linear-gradient(0deg,#ffffff00, #ffffff40, #ffffff99, #ffffff40, #ffffff00);
-    top: 100px;  /*位置*/
+    background: -webkit-linear-gradient(00deg,#ffffff00, #ffffff40, #ffffff99, #ffffff40, #ffffff00);
+    top: 200px;  /*位置*/
     left: 50%; /*位置*/
-    width: 90%;
-    margin-top: 10%;
+    width: 80%;
+    margin-top: 3%;
     text-align: center;
     -ms-transform: translate(-50%,-50%);
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
-/*==見出しの設定==*/
-#top .page-title{
+.page-title{
     font-size: 5rem;                    /*フォントサイズ*/
     font-weight: 800;
     font-family: 'Constantia', serif;   /*フォント*/
@@ -177,7 +161,6 @@ img{
     -webkit-text-fill-color: transparent; /*切り抜き*/
     -webkit-text-stroke: 1px #002ab3;   /*縁取り*/
 }
-/*見出し下の線*/
 .top-underline{
     position: relative;
     display: inline-block;
@@ -187,260 +170,15 @@ img{
     background-color: #00bcd4;
     background-image: -webkit-linear-gradient(135deg, #FD6585 10%, #0d91b9 100%);
     background-image: linear-gradient(135deg, #FD6585 10%, #0d91b9 100%);
-    width: 80%;
+    width: 90%;
     margin-bottom: 2%;
 }
-#top p{
-    text-align: center;
-    font-size: 1.4rem;
-    font-weight: bolder;
-    color: rgb(52, 23, 80);
-    margin-bottom: 10px;
-}
 
-/*==記事の設定==*/
-.intro-contents{
-    display: flex;                    /*横並びの設定*/
-    justify-content: space-between;   /*横並びの設定*/
-    margin-bottom: 50px;              /*下部余白の設定*/
-}
-article{
-    background: #f3fafa;
-    padding: 2% 2%;
-    width: 72%;     /*メイン記事の設定*/
-    order: 2;
-}
-aside{
-    background: #faf3f3;
-    padding: 1% 1%;
-    width: 26%;     /*サイドバーの設定*/
-    order: 3;
-}
-
-.post-info{
-    position: relative;  /*相対位置への配置*/
-    padding-top: 4px;    
-    margin-bottom: 15px;
-}
-
-#purpose p{
-    padding-bottom: 75px;
-}
-article hr{
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, #f0f0f0, #444343, #f0f0f0);
-    background-image: -moz-linear-gradient(left, #f0f0f0, #444343, #f0f0f0);
-    background-image: -ms-linear-gradient(left, #f0f0f0, #444343, #f0f0f0);
-    background-image: -o-linear-gradient(left, #f0f0f0, #444343, #f0f0f0);
-    margin-bottom: 75px;
-    margin-top: 50px;
-}
-/*---------------Introduceの設定---------------*/
-.Introduction-title{
-    border-left: solid 7.5px #0093D0;
-}
-.Introduction-title h3{
-    padding-left:10px;
-    font-family: "Yu Mincho", "YuMincho", serif; /*フォントの指定*/
-    font-size: 1.75rem;
-}
-.Introduction-title h4{
-    padding-left:10px;
-    font-family: "Times New Roman", serif; /*フォントの指定*/
-    font-size: 1rem;
-}
-.flex-1{
-    display: flex;                   /*画像とテキストの横並び指定*/
-    justify-content: space-between;  /*配置の設定*/
-}
-.flex-1>p{
-    width: 65%; /*幅の設定*/
-    font-size: 1.05rem;
-    padding-top: 20px;
-    padding-left: 30px;
-}
-.nebula{
-    margin-left: 10px;  /*余白*/
-    margin-right: 10px; /*余白*/
-    margin-bottom: 30px;
-    width: 200px;  /*幅*/
-    height: 200px; /*高さ*/
-    border-radius: 50%; /*縁の丸み*/
-    object-fit: cover;  /*トリミング*/
-    border: 12px solid rgba(131, 0, 125, 0.425); /* 半透明の枠線を付加 */
-}
-.flex-2{
-    display: flex;                   /*画像とテキストの横並び指定*/
-    justify-content: space-between;  /*配置の設定*/
-}
-.flex-2>p{
-    width: 40%; /*幅の設定*/
-    margin-bottom: 7px;
-}
-.profile{
-    position: relative; /*ポジション*/
-    margin: 20px 30px;
-    width: 220px;  /*幅*/
-    height: 220px; /*高さ*/
-    border-radius: 50%; /*縁の丸み*/
-    object-fit: cover;  /*トリミング*/
-    border: 10px solid rgba(0, 52, 131, 0.425); /* 半透明の枠線を付加 */
-}
-
-.intro-text h1{
-    font-size: 1.75rem;
-    font:"arial";
-    border-bottom: 2px #d6d5d5 solid; 
-    margin-bottom: 10px;
-}
-.intro-text p{
-    font-size: 1.05rem;
-    margin-bottom: 7.5px;
-    margin-left: 30px;
-}
-/*=====直近のニュース=====*/
-table{
-    width: 90%;
-    margin: 0 auto;
-    border-collapse: separate;
-    font-size: 1rem;
-    border: 2px solid #5b85b8;
-}
-table th,
-table td{
-    padding: 10px;
-}
-table th {
-    background: #5b85b8;
-    vertical-align: middle;
-    text-align: center;
-    width: 100px;
-    overflow: visible;
-    position: relative;
-    color: #fff;
-    font-weight: normal;
-    font-size: 1.2rem;
-}
-table th:after {
-    left: 100%;
-    top: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    border-color: rgba(136, 183, 213, 0);
-    border-left-color: #5b85b8;
-    border-width: 10px;
-    margin-top: -10px;
-}
-table td {
-    background: #dee6ecaf;
-    width: 360px;
-    padding-left: 20px;
-}
-table h3{
-    margin-bottom: 10px;
-}
-.news-flex{
-    display: flex;                   /*画像とテキストの横並び指定*/
-    justify-content: space-between;  /*配置の設定*/
-}
-.news-flex>div{
-    width: 60%; /*幅の設定*/
-    margin: 10px 15px;
-}
-table .news-photo{
-    margin: 15px 10px;  /*余白*/
-    max-width: 150px;  /*幅*/
-    max-height: 150px; /*高さ*/
-    object-fit: contain;  /*トリミング*/
-}
-
-/*ニュースの詳細ボタンの設定*/
-a.news-link-button {
-	display: block;
-	text-align: center;
-	text-decoration: none;
-	width: 120px;
-	margin: auto;
-	padding: 3px 10px;
-	font-weight: bold;
-	border: 2px solid #5b85b8;
-	color: #190b97;
-	cursor: pointer;
-	position: relative;
- 	overflow: hidden;
- 	z-index: 1;
-}
-a.news-link-button:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #5b85b8;
-	transform: translateX(-100%);
-	transition: all .4s;
-	z-index: -1;
-}
-a.news-link-button:hover::before {
-	transform: translateX(0);
-}
-a.news-link-button:hover {
-	color: #fff;
-}
-
-/*ニュースページに飛ぶボタン*/
-.to-news-button{
-    margin: 10px 50px 50px 0;
-    text-align: right;
-}
-.to-news-button a{
-    background: #eee; /*背景色*/
-    border: 1px solid #5b85b8; /*枠線*/
-    border-radius: 3px; /*角の丸み*/
-    position: relative; /*配置*/
-    display: flex;      /*配置*/
-    display: inline-block; /*inline-blockの設定*/
-    align-items: center;   /*中央寄せ*/
-    justify-content: space-around;
-    margin: 0 auto;  /*余白*/
-    max-width: 200px;/*幅*/
-    padding: 5px 50px 5px 15px; /*Padding*/
-    color: #1d1d1d;             /*色*/
-    transition: 0.3s ease-in-out; /*変化*/
-    font-size: 1.1rem;
-    font-weight: bold;            /*字体*/
-}
-.to-news-button a:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    bottom: 0;
-    right: 2rem;
-    font-size: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: right 0.3s;
-    width: 6px;
-    height: 6px;
-    border-top: solid 2px currentColor;
-    border-right: solid 2px currentColor;
-    transform: translateY(-50%) rotate(45deg);
-}
-.to-news-button a:hover {
-    background: #5b85b8;
-    color: #FFF;
-}
-.to-news-button a:hover:after {
-    right: 1.4rem;
-}
 /*SNSリンクについて*/
+.sns-box{
+    width: 80%;
+    margin: 3% auto;
+}
 .sns{
     display: flex;
     font-size: 1.8rem;
@@ -455,7 +193,7 @@ a.news-link-button:hover {
 }
 .sns a{
     text-decoration: none;
-    color: #190b97;
+    color: #bf00d0;
 }
 @keyframes shake{
     0%{transform: rotate(30deg);}
@@ -465,180 +203,145 @@ a.news-link-button:hover {
     80%{transform: rotate(5deg);}
 }
 
-/*アコーディオンタイトル*/
-.title {
-    position: relative;/*+マークの位置基準とするためrelative指定*/
-    cursor: pointer;
-    font-size:1rem;
-    font-weight: normal;
-    margin-left: 6%;
-    padding: 3% 3% 3% 50px;
-    transition: all .5s ease;
-}
-/*アイコンの＋と×*/
-.title::before,
-.title::after{
-    position: absolute;
-    content:'';
-    width: 15px;
-    height: 2px;
-    display: inline-block;
-    background-color: #333;
-    
-}
-.title::before{
-    top:48%;
-    left: 15px;
-    transform: rotate(0deg); 
-}
-.title::after{    
-    top:48%;
-    left: 15px;
-    transform: rotate(90deg);
-
-}
-/*　closeというクラスがついたら形状変化　*/
-.title.close::before{
-  transform: rotate(45deg);
-}
-
-.title.close::after{
-  transform: rotate(-45deg);
-}
-
-/*アコーディオンで現れるエリア*/
-.box {
-    display: none;/*はじめは非表示*/
-    background: #f3f3f3;
-    margin:0 3% 3% 3%;
-    padding: 3%;
-}
-
-/*========= レイアウトのためのCSS ===============*/
-
-
-h2{
-    text-align: center;
-    margin: 30px 0;
-    font-size:1rem;
-}
 
 
 
+/*===========各画像について===========*/
+/*クリックで拡大する設定*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.content{
+    margin: 0 auto; 
+    padding: 5% 0;
 
-
-
-
-
-
-
-/*自己紹介のリンクについて*/
-.link{ 
-    display: flex;
-    font-size: 1.35rem;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    list-style: none;
-    text-align: center;
-    justify-content: center;
 }
-.link li{
-    margin-right: 15px;
-}
-/*ボタンの設定*/
-.intro-button{
-    margin-top: 20px;
-    width: 200px;
-    display: inline-block;
-    padding: 0.25em;
-    text-decoration: none;
-    background: #e9e9e9be;
-    border-left: solid 6px #002ab3; /*左線*/
-    color: #002ab3;                 /*文字色*/
-    font-weight: bold;
-    font-size: 0.85rem;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.534);
-}
-.intro-button:hover{
-    color: #313131;
-    text-decoration: none;
-    background-color: #b0e7ff;
-}
-.intro-button:active {
-    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
-    transform: translateY(2px);
-}
-
-.cp_hr07 {
-	position: relative;
-	overflow: visible;
-	text-align: center;
-	color: #6270f0;
-	border-width: 2px 0 0 0;
-	border-style: dotted;
-	border-color: #6270f0;
-    margin: 50px 100px 60px 100px;
-}
-.cp_hr07::after {
-	position: absolute;
-    top: -0.9rem;
-	left: 50%;
-	display: inline-block;
-	content: '★';
-    background: #f3fafa;
-}
-
-/*=====物理学アイコン=====*/
-.physics-skills{
-    text-align: center;  /*アイテムの中央揃え*/
-    margin-bottom: 60px;
-}
-.physics-skills div{
-    display: table-cell;   /*横並びの設定*/
-    align-items: flex-end; /*下揃え*/
-    margin: auto;          /*余白設定*/
-    display: inline-block; /*inline-brockとしておく*/
-}
-.physics-item{
-    margin: 5px;       /*余白設定*/
-    padding: 5px;      /*余白設定*/
-    max-width: 120px;   /*幅の最大値*/
-    text-align: center; /*文字の中央揃え*/
-}
-.physics-item img{
-    border: 1px solid #190b975d;
-}
-
-/*=====プログラミングアイコン=====*/
-.programing-skills{
-    text-align: center;  /*アイテムの中央揃え*/
-    margin-bottom: 0;
-}
-.programing-skills div{
-    display: table-cell;   /*横並びの設定*/
-    align-items: flex-end; /*下揃え*/
-    margin: auto;          /*余白設定*/
-    display: inline-block; /*inline-brockとしておく*/
-}
-.programing-item{
-    margin: 10px;       /*余白設定*/
-    padding: 10px;      /*余白設定*/
-    max-width: 100px;   /*幅の最大値*/
-    text-align: center; /*文字の中央揃え*/
-}
-.programing-item img{
-    border: 1px solid #190b975d;
-}
-
-.location-info p{
-    padding: 1% 2%;
-    margin: 0 2%;
-}
-
-.location-map iframe{
-    display: inline-block; /*inline-blockの設定*/
-    padding: 0 2%;
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
     width: 100%;
+}
+.modal__bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.modal__content{
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    padding: 40px;
+    position: absolute;
+    transform: translate(-50%,-43%);
+    width: 62%;
+}
+
+
+/*画像の表示の設定*/
+.grid{
+    background: -webkit-linear-gradient(30deg,#ffebe5,#edd8fc,#dbfaf6); /*グラデーション*/
+    display: grid;
+    gap: 26px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2% 5%;
+    margin-top: 6px;
+    margin-bottom: 50px;
+}
+.wrapper{
+    max-width: 1300px;    /*横幅最大1100px*/
+    margin: 0 auto;       /*中央に配置する指定*/
+    padding: 0 4%;        /*スマートフォン向け余白の設定*/
+}
+.item div{
+    background: -webkit-linear-gradient(30deg,#553b77,#673272,#6e3246); /*グラデーション*/
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+.item div img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.item h3{
+    text-align: center;
+    margin: 2%;
+}
+
+.grid .gallery-intro{
+    padding-top: 10%;
+}
+.grid .gallery-intro h3{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.gallery-intro-title{
+    border-left: solid 10px #bf00d0;
+    padding-left:10px;
+    font-family: "Yu Mincho", "YuMincho", serif; /*フォントの指定*/
+    margin-bottom: 0 auto;
+}
+.grid .gallery-intro p{
+    margin-left: 5px;
+    font-size: 1.1rem;
+}
+.grid .gallery-intro h4{
+    font-family: "Yu Mincho", "YuMincho", serif;
+    font-size: 1.1rem;
+    margin: 10px 0 0 10px ;
+}
+
+.gallery-intro hr{
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #444343, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #444343, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #444343, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #444343, #f0f0f0);
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+.text{
+    display: flex;
+    gap: 3%;
+	font-size: 1.05rem;
+	margin: 0;
+    padding: 2%;
+}
+.text>img{
+    max-width: 700px;
+    max-height: 650px;
+}
+.text h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.image_mouseover_1{
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.image_mouseover_1 img{
+    display: block;
+    transition-duration: 0.5s;
+}
+.image_mouseover_1 img:hover{
+    transform: scale(0.9,0.9);
+    transition-duration: 0.5s;
+    opacity: 0.6;
 }
 
 /*ページトップに飛ぶボタン*/
@@ -647,6 +350,7 @@ h2{
 }
 .to-top-button{
     color: #190b97;
+    margin-top: 100px;
     margin-bottom: 50px;
     font-size: 1.1rem;
     font-weight: bold;
@@ -664,33 +368,6 @@ h2{
     box-shadow: 0 0 0 #002ab3;
 }
 
-/*======SNSリンクの設定======*/
-.twitter-timeline{
-    padding-top: 10px;
-}
-/*===サブカラムの設定===*/
-.sub-title{
-    font-size: 1.375rem;
-    padding: 0 8px 8px;
-    border-bottom: 2px #ff8888 solid;
-    font-weight: normal;
-}
-.sub-menu{
-    margin-bottom: 60px; /*下部の余白*/
-    list-style: none;    /*リストの丸点を非表示*/
-}
-.sub-menu li{
-    border-bottom: 1px #c7c7c7 solid; /*カテゴリーごとに線分けして表示*/
-}
-.sub-menu a{
-    color: #432;
-    padding: 10px;  /*リンクのクリックできる範囲を広げる*/
-    display: block; /*リンクのクリックできる範囲を広げる*/
-}
-.sub-menu a:hover{
-    color: #ff8888; /*カーソルを合わせたときの変化*/
-}
-
 /*フッターの設定*/
 footer{
     background: rgb(0, 65, 150);  /*色の設定*/
@@ -701,6 +378,7 @@ footer p{
     color: #fff;        /*色の設定*/
     font-size: 0.875rem;  /*フォントサイズ*/
 }
+
 
 
 
