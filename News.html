@@ -1,0 +1,242 @@
+<!--Document Typeを指定-->
+<!DOCTYPE html> 
+<!--言語の指定-日本語-->
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">        <!--文字コード-->
+        <title>Test news page</title>  <!--タイトル-->
+        <meta name="description" content="ウェブページ作成の練習">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  <!--レスポンシブ対応-->
+
+        <!--CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">              <!--ress.cssの指定-->
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">   <!--Google Fontsの指定-->
+        <link href="News.css" rel="stylesheet">                                              <!--CSSの指定-->
+
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!--以下, クリックでの画像拡大に関する設定-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+    </head>
+    
+    <body>
+        <!--ヘッダー-->
+        <header class="page-header">
+            <h1> <!--h1にロゴを配置-->
+                <a href="index.html"><img class="icon" src="images/icon.jpg" alt="Test"></a>
+            </h1>
+            <nav> <!--ナビゲーションメニュー-->
+                <ul class="main-nav">
+                    <li><a href="Introduce.html">ホーム</a></li>
+                    <li><a href="#">近況報告</a></li>
+                    <li><a href="Astrophoto.html">ギャラリー</a></li>
+                    <li><a href="Physics.html">備忘録</b></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="img-frame">
+            <div class="img-01"></div>
+            <div class="img-02"></div>
+            <div class="img-03"></div>
+            <div class="img-04"></div>
+            <div class="img-05"></div>
+        </div>
+        <div class="top-sentence">
+            <h1 class="page-title">Latest News</h1>
+            <hr class="top-underline">
+        </div>
+
+
+        <div class="news-contents wrapper">
+            <article>
+                <!--卒業論文終了-->
+                <div id="graduate-reserch">
+                    <header class="post-info">
+                        <h2 class="post-title">卒業論文を書き終えました.</h2>
+                        <p class="post-date">3/16 <span>2023</span></p>
+                        <p class="post-cat">カテゴリー: 研究活動関連</p>
+                    </header>
+                    <!--<img src="images/news/F.jpg" width="300px" alt="">-->
+                    <div class="news-image">
+                        <a href="images/news/AF.jpg" data-lightbox="group"><img src="images/news/AF.jpg" width="300"></a>
+                        <a href="images/news/F.jpg" data-lightbox="group"><img src="images/news/F.jpg" width="300"></a>
+                    </div>
+                    <p>
+                        ゲージ理論とは物理学において最も重量な理論のひとつである. 
+                        ゲージとはラグランジアンの持つ自由度のことであり, 
+                        その自由度内での変換をゲージ変換と呼ぶ. ゲージ変換の下でラグランジアンは不変に保たれ, 
+                        このことを「ゲージ対称性」と呼ぶ. ゲージ理論はこの対称性という文脈で語られることが多い. 
+                        現在知られている 4 つの力, 「重力相互作用」「電磁相互作用」「弱い相互作用」「強い相互作用」についても
+                        後者3 つがゲージ理論の形式で書かれており, 
+                        これらをの理論形態を統合した「大統一理論」もゲージ理論の言葉で書かれている. 
+                        したがって, ゲージ理論についての理解は, 量子や物性理論の基礎を理解する上で重要なものである.
+                    </p>
+                    <p>
+                        <a class="news-button" href="C:/Users/YutoHosogi/Desktop/研究関連/081920462_細木雄登_田仲川口研_R4卒業論文.pdf">卒論はここから</a>
+                    </p>
+                </div>
+                <hr>
+                <!--SPM24th-->
+                <div id="spm-24th">
+                    <header class="post-info">
+                        <h2 class="post-title">数物セミナー第24回合同合宿.</h2>
+                        <p class="post-date">3/9 <span>2023</span></p>
+                        <p class="post-cat">カテゴリー: 学外活動関連</p>
+                    </header>
+                    <div class="news-image">
+                        <a href="images/news/spm24th_1.JPG" data-lightbox="group"><img src="images/news/spm24th_1.JPG" width="300"></a>
+                        <a href="images/news/spm24th_2.JPG" data-lightbox="group"><img src="images/news/spm24th_2.JPG" width="300"></a>
+                    </div>
+                    <p>
+                        今日, 全国の大学では知的好奇心旺盛な学部生を中心として, 
+                        局所的ではありますが大学間交流を目的とした自主セミナーが行われています. 
+                        しかし, 学部生を発信源とする全国規模のセミナーは未だかつて行われてはいませんでした. 
+                        この数物セミナーはまさに今までに無かった, 数学・物理に興味のある大学学部生を対象として, 
+                        大学・学年・分野などの垣根を越えた交流を目指した「全国規模の」セミナーです. 
+                        大学の学部時代が将来の進路について考える時期だからこそ, 
+                        本セミナーを通じて形成された全国規模のネットワークが将来生きてくると確信します. 
+                        開催地は静岡県御殿場青少年交流の家, 参加者は150人と大人数で, 
+                        皆がそれぞれ違う学問対象に興味があり, お互いの知識を深め合えました.
+                    </p>
+                    <p>
+                        <a class="news-button" href="https://physicsmathematicsseminar.github.io/physmathseminar.github.io/index.html">数物セミナー公式HP</a>
+                    </p>
+                </div>
+                <hr>
+                <!--月食観望会-->
+                <div>
+                <header class="post-info">
+                    <h2 class="post-title">皆既月食観望会.</h2>
+                    <p class="post-date">11/8 <span>2022</span></p>
+                    <p class="post-cat">カテゴリー: 天文活動関連</p>
+                </header>
+                <div class="news-image">
+                    <a href="images/news/eclips_1.JPG" data-lightbox="group"><img src="images/news/eclips_1.JPG" width="285"></a>
+                    <a href="images/news/eclips_2.JPG" data-lightbox="group"><img src="images/news/eclips_2.JPG" width="380"></a>
+                </div>
+                <p>
+                    月全体が徐々に地球の影に覆われる皆既月食が8日夜, 
+                    全国各地で観測されました. 特に東京近辺から西にかけては, 
+                    月が地球の影に完全に覆われる「皆既食」中に月の後ろに天王星が入る天王星食も見られました. 
+                    皆既食と惑星食が同時に見られるのは日本では442年ぶりで, 極めて珍しい天体ショーとなりました. 
+                    左の写真の中で, 左下に見えている星が天王星です. 右の写真では, 月蝕の経過を1つの画像にまとめ, 
+                    地球の影が分かりやすく出るよう編集しています. 当日は, 名古屋大学豊田講堂前での開催でしたが, 
+                    50人以上の一般の方にも参加いただけた稀有な経験となりました. 
+                </p>
+                </div>
+                <hr>
+                <!--SPM22nd-->
+                <div>
+                    <header class="post-info">
+                        <h2 class="post-title">数物セミナー第22回合同合宿.</h2>
+                        <p class="post-date">2/26 <span>2022</span></p>
+                        <p class="post-cat">カテゴリー: 学外活動関連</p>
+                    </header>
+                    <div class="news-image">
+                        <a href="images/news/spm22nd_1.JPG" data-lightbox="group"><img src="images/news/spm22nd_1.JPG" width="300"></a>
+                        <a href="images/news/spm22nd_2.JPG" data-lightbox="group"><img src="images/news/spm22nd_2.JPG" width="300"></a>
+                    </div>
+                    <p>
+                        数物セミナー第22回合同合宿に参加しました. 今回は, コロナ禍で開催されていなかった2年のブランクを超えての開催でした. 
+                        人数制限が行われたり, 検温・陰性証明を提出したりといろいろと大変でしたが, 無事開催まで漕ぎつけてくれた運営の方々に感謝です. 
+                        このセミナーでは物理学の量子力学における基礎的な事象についての知見を深めました. 
+                        また, 延泊して開催される「総会」において, 次期副代表に立候補, 選出されました. 
+                        今後の数物セミナーの活動に尽力していく所存です.
+                    </p>
+                    <p>
+                        <a class="news-button" href="https://physicsmathematicsseminar.github.io/physmathseminar.github.io/index.html">数物セミナー公式HP</a>
+                    </p>
+                </div>
+                <hr>
+                <!--合同観測会_3-->
+                <div>
+                    <header class="post-info">
+                        <h2 class="post-title">第3回名大-愛教大合同観測会.</h2>
+                        <p class="post-date">11/7 <span>2021</span></p>
+                        <p class="post-cat">カテゴリー: 天文活動関連</p>
+                    </header>
+                    <div class="news-image">
+                        <a href="images/news/CORE_3rd.JPG" data-lightbox="group"><img src="images/news/CORE_3rd.JPG" width="500"></a>
+                    </div>
+                    <p>
+                        愛知教育大学の天文部COREさんとの合同観測会もこれで3度目. 今回も主な企画等を私が行い, 
+                        11/6(福井県福井和泉スキー場駐車場), 11/7(岐阜県白川町白山大山神社)において無事開催することができました. 
+                        今回は希望者のみ前日から出陣し, 2夜連続の合同観測会を行いました. 
+                        今回は過去最多の参加者で, 活発に大学間交流を行うことができました. 
+                        上の写真は, もはや恒例になった集合写真です. 
+                    </p>
+                    <p class="flex-1">
+                        <a class="news-button" href="http://www.nuasa.org/">天体研究会公式HP</a>
+                        <a class="news-button" href="https://www.phyas.aichi-edu.ac.jp/~phoenix//">愛教大CORE公式HP</a>
+                    </p>
+                </div>
+                <hr>
+                <!--本秋合宿2022-->
+                <div>
+                    <header class="post-info">
+                        <h2 class="post-title">天体研究会本秋合宿.</h2>
+                        <p class="post-date">10/9 <span>2021</span></p>
+                        <p class="post-cat">カテゴリー: 天文活動関連</p>
+                    </header>
+                    <div class="news-image">
+                        <a href="images/news/2022Honaki_1.jpg" data-lightbox="group"><img src="images/news/2022Honaki_1.jpg" width="300"></a>
+                        <a href="images/news/2022Honaki_2.jpg" data-lightbox="group"><img src="images/news/2022Honaki_2.jpg" width="300"></a>
+                    </div>
+                    <p>
+                        私の所属しているサークル, 天体研究会で, 2022年度の本秋合宿が開催されました. 
+                        私たち3年生にすれば, 役職を降りる最後の合宿となりました. 
+                        2泊3日の長野県飯田市の大平保養センターでの合宿は, 幸運なことに前日天候に恵まれ, 
+                        素晴らしい星空を堪能することができました. 学生生活の思い出に深く刻まれるイベントとなりました.
+                    </p>
+                    <p>
+                        <a class="news-button" href="http://www.nuasa.org/">天体研究会公式HP</a>
+                    </p>
+                </div>
+                <hr>
+                <!--CEED-->
+                <div>
+                    <header class="post-info">
+                        <h2 class="post-title">CEEDオンラインセミナー講演.</h2>
+                        <p class="post-date">4/18 <span>2021</span></p>
+                        <p class="post-cat">カテゴリー: 学外活動関連</p>
+                    </header>
+                    <p>
+                        4/18日に行われた高知大学自主ゼミ栽培サークル(CEED)主催の, 全国の学生を対象とした
+                        オンラインセミナーで講演を行いました. 講演題目は「相対性理論と宇宙」で, 
+                        一見難解で敬遠されがちな相対性理論という学問について, その意図を分かりやすく伝えるための発表にしました. 
+                        講演資料は以下からアクセスできます.
+                    </p>
+                    <p>
+                        <a class="news-button" href="C:/Users/YutoHosogi/Desktop/研究関連/輪講/相対性理論と宇宙.pdf">資料はここから</a>
+                    </p>
+                </div>
+
+            </article>
+
+            <aside>
+                <h3 class="sub-title">このページについて</h3>
+                <p>
+                    ここは, そこそこ大きな行事やイベント事があったとき, 個人の感想や写真等を共有するページです. 
+                    所謂「ブログ」というやつですね. まぁ, 楽しんでいってください.
+                </p>
+                <!-- <h3 class="sub-title">カテゴリー</h3>
+                <ul class="sub-menu">
+                    <li><a href="#">研究活動関連</a></li>
+                    <li><a href="#">天文活動関連</a></li>
+                    <li><a href="#">学外活動関連</a></li>
+                    <li><a href="#">その他(趣味など)</a></li>
+                </ul> -->
+                <h3 class="sub-title">Twitter</h3>
+                <a class="twitter-timeline" data-height="1000" href="https://twitter.com/ximu_astro?ref_src=twsrc%5Etfw">Tweets by ximu_astro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </aside>
+        </div>
+        <p id="to-top"><a href="#" class="to-top-button">トップに戻る</a></p>
+        <!--フッター-->
+        <footer>
+            <p><small>Presented by @Ximu_astro</small></p>
+        </footer>
+    </body>
+</html>
