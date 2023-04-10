@@ -1,0 +1,347 @@
+@charset "UTF-8";
+
+/*---------------共通部分---------------*/
+html{
+    font-size: 100%;
+    --top-spacing: 100px;
+    scroll-padding-top: var(--top-spacing);
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", "游ゴシック体", 'Hiragino Kaku Gothic ProN', "ヒラギノ角ゴ Pro W3", sans-serif; /*書体指定*/
+    line-height: 1.7;  /*行の高さ指定*/
+    color: #432;     /*色指定*/
+    margin: 0;
+    padding: 0;
+}
+/*<a>タグ棒線の指定*/
+a{
+    text-decoration: none;
+}
+/*画像の指定*/
+img{
+    max-width: 100%;
+}
+
+
+/*---------------ヘッダーの設定---------------*/
+/*ロゴ*/
+.icon{
+    width: 80px;      /*ロゴの横幅の設定*/
+    margin-top: 10px;  /*マージンの設定*/
+    margin-left: 30px; /*マージンの設定*/
+    border-radius: 50%;/*アイコンを円形に*/
+}
+/*ナビゲーションメニュー*/
+/*メインの設定*/
+.main-nav{ 
+    display: flex;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    margin-top: 35px;
+    list-style: none;
+}
+/*ボタンの横並び間隔*/
+.main-nav li{
+    margin-left: 30px;
+    border-bottom: 2px #d6d5d5 solid; /*カテゴリーごとに線分けして表示*/
+}
+/*ボタンの色*/
+.main-nav a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(21, 1, 77);
+    position: relative;
+    text-decoration: none;
+}
+.main-nav a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background: rgb(68, 0, 255);
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: 0.5s;
+}
+/*ボタンにカーソルを合わせたときの色*/
+.main-nav a:hover{
+    color: rgb(68, 0, 255);
+}
+.main-nav a:hover:before{
+    transform: scale(1);
+}
+
+.page-header{
+    display: flex;                  /*横並びの設定*/
+    justify-content: space-between; /*両端の設置の設定*/
+    padding: 0 120px;               /*余白の設定*/
+    position: fixed; /*固定*/
+    inset: 0;        /*横幅いっぱい*/
+    z-index:10000;   /*最前面*/
+    height: 100px;   /*高さ*/ 
+    background-color: #ddafddd7;  /*色*/
+}
+.wrapper{
+    max-width: 1300px;    /*横幅最大1100px*/
+    margin: 0 auto;       /*中央に配置する指定*/
+    padding: 0 4%;        /*スマートフォン向け余白の設定*/
+}
+
+.img-frame{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+}
+.img-01{
+    background-image: url('images/phys-header.jpg');
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 40%;
+    background-size: cover;
+}
+.top-sentence{
+    position: absolute; /*配置*/
+    background: -webkit-linear-gradient(00deg,#ffffff00, #ffffff60, #ffffff, #ffffff60, #ffffff00);
+    top: 200px;  /*位置*/
+    left: 50%; /*位置*/
+    width: 50%;
+    margin-top: 3%;
+    text-align: center;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.page-title{
+    font-size: 5rem;                    /*フォントサイズ*/
+    font-weight: 800;
+    font-family: 'Constantia', serif;   /*フォント*/
+    color: rgb(188, 255, 255);        /*色*/
+    display: inline-block;
+    background: -webkit-linear-gradient(30deg,#FD6585,#884daf,#0d91b9); /*グラデーション*/
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /*切り抜き*/
+    -webkit-text-stroke: 1px #002ab3;   /*縁取り*/
+}
+.top-underline{
+    position: relative;
+    display: inline-block;
+    -webkit-text-stroke: 1px #002ab3;
+    height: 3px;
+    border-width: 0;
+    background-color: #00bcd4;
+    background-image: -webkit-linear-gradient(135deg, #FD6585 10%, #0d91b9 100%);
+    background-image: linear-gradient(135deg, #FD6585 10%, #0d91b9 100%);
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+/*=======================================================*/
+.physics-contents{
+    display: flex;                    /*横並びの設定*/
+    justify-content: space-between;   /*横並びの設定*/
+    margin-bottom: 50px;              /*下部余白の設定*/
+    margin-top: 20px;
+}
+article{
+    width: 72%;     /*メイン記事の設定*/
+    order: 2;
+}
+article div{
+    padding: 2%;
+    background: #fef7ff;
+}
+aside{
+    background: #f9f7ff;
+    padding: 1% 1%;
+    width: 26%;     /*サイドバーの設定*/
+    order: 3;
+}
+aside p{
+    padding: 3%;
+    padding-bottom: 40px;
+}
+/*=======================================================*/
+/*見出しの詳細設定*/
+.phys-title{
+    font-size: 1.5rem;
+    border-left: solid 5px #0093D0;
+    padding-left:10px;
+    font-family: "Yu Mincho", "YuMincho", serif; /*フォントの指定*/
+    margin-bottom: 0 auto;
+}
+.intro{
+    padding: 2% 3% 0 3%;
+}
+
+/*=====物理学アイコン=====*/
+.physics-skills{
+    text-align: center;  /*アイテムの中央揃え*/
+    margin-bottom: 60px;
+}
+.physics-skills div{
+    align-items: flex-end; /*下揃え*/
+    margin: auto;          /*余白設定*/
+    display: inline-block; /*inline-brockとしておく*/
+}
+.physics-item{
+    margin: 5px;       /*余白設定*/
+    padding: 5px;      /*余白設定*/
+    max-width: 120px;   /*幅の最大値*/
+    text-align: center; /*文字の中央揃え*/
+}
+.physics-item img{
+    border: 1px solid #190b975d;
+}
+
+
+
+
+
+.astro-table{
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: separate;  /* 表の線と線の間を空ける */
+    border-spacing:  5px;       /* 表の線と線の間の幅 */
+}
+th, td{
+    padding: 5px 10px;          /* 余白指定 */
+}
+th{
+    width: 20%;
+    background-color:  #b67b7b75; /* 背景色指定 */
+    color:  #fff;               /* 文字色指定 */
+    font-weight:  normal;       /* 文字の太さ指定 */
+}
+td{
+    background-color:  #ffeded75; /* 背景色指定 */
+    border: 1px solid #b67b7b75;
+}
+.astro-table th img{
+    max-width: 60px;
+}
+
+/*アコーディオンタイトル*/
+.title {
+    position: relative;/*+マークの位置基準とするためrelative指定*/
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-left: 3%;
+    padding: 3% 3% 3% 40px;
+    transition: all .5s ease;
+}
+/*アイコンの＋と×*/
+.title::before,
+.title::after{
+    position: absolute;
+    content:'';
+    width: 17px;
+    height: 2px;
+    display: inline-block;
+    background-color: #333;
+    
+}
+.title::before{
+    top:48%;
+    left: 15px;
+    transform: rotate(0deg); 
+}
+.title::after{    
+    top:48%;
+    left: 15px;
+    transform: rotate(90deg);
+
+}
+/*　closeというクラスがついたら形状変化　*/
+.title.close::before{
+  transform: rotate(45deg);
+}
+
+.title.close::after{
+  transform: rotate(-45deg);
+}
+/*アコーディオンで現れるエリア*/
+.box {
+    display: none;/*はじめは非表示*/
+    margin:0 3% 0 3%;
+}
+
+
+/*ページトップに飛ぶボタン*/
+#to-top{
+    text-align: center; /*ボタンの中央揃え*/
+}
+.to-top-button{
+    color: #190b97;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: #e7e7e7;
+    padding: 5px 10px;
+    border: 1.5px solid #002ab3;
+    box-shadow: 0 3px 0 #002ab3;
+    border-radius: 100px;
+    display: inline-block;
+    transition: .3s;
+}
+.to-top-button:hover {
+    transform: translateY(5px);
+    background: #ffffff;
+    box-shadow: 0 0 0 #002ab3;
+}
+
+
+/*======SNSリンクの設定======*/
+.twitter-timeline{
+    padding-top: 10px;
+}
+/*===サブカラムの設定===*/
+.sub-title{
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #c7c7c7 solid;
+    font-weight: normal;
+}
+.sub-menu{
+    margin-bottom: 60px; /*下部の余白*/
+    list-style: none;    /*リストの丸点を非表示*/
+}
+.sub-menu li{
+    border-bottom: 1px #c7c7c7 solid; /*カテゴリーごとに線分けして表示*/
+}
+.sub-menu a{
+    color: #432;
+    padding: 10px;  /*リンクのクリックできる範囲を広げる*/
+    display: block; /*リンクのクリックできる範囲を広げる*/
+}
+.sub-menu a:hover{
+    color: rgb(136, 154, 255); /*カーソルを合わせたときの変化*/
+}
+
+
+/*フッターの設定*/
+footer{
+    background: rgb(0, 65, 150);  /*色の設定*/
+    text-align: center;
+    padding: 26px 0;     /*余白の設定(上下, 左右)*/
+}
+footer p{
+    color: #fff;        /*色の設定*/
+    font-size: 0.875rem;  /*フォントサイズ*/
+}
+
+
+@media(min-width:751px){
+    .sp{
+        display: none !important;
+    }
+}
