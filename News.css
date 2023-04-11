@@ -1,0 +1,419 @@
+@charset "UTF-8";
+
+/*---------------共通部分---------------*/
+html{
+    font-size: 100%;
+    --top-spacing: 100px;
+    scroll-padding-top: var(--top-spacing);
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", "游ゴシック体", 'Hiragino Kaku Gothic ProN', "ヒラギノ角ゴ Pro W3", sans-serif; /*書体指定*/
+    line-height: 1.7;  /*行の高さ指定*/
+    color: #432;     /*色指定*/
+    margin: 0;
+    padding: 0;
+}
+/*<a>タグ棒線の指定*/
+a{
+    text-decoration: none;
+}
+/*画像の指定*/
+img{
+    max-width: 100%;
+}
+
+
+/*---------------ヘッダーの設定---------------*/
+/*ロゴ*/
+.icon{
+    width: 80px;      /*ロゴの横幅の設定*/
+    margin-top: 10px;  /*マージンの設定*/
+    margin-left: 30px; /*マージンの設定*/
+    border-radius: 50%;/*アイコンを円形に*/
+}
+/*ナビゲーションメニュー*/
+/*メインの設定*/
+.main-nav{ 
+    display: flex;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    margin-top: 35px;
+    list-style: none;
+}
+/*ボタンの横並び間隔*/
+.main-nav li{
+    margin-left: 30px;
+    border-bottom: 2px #d6d5d5 solid; /*カテゴリーごとに線分けして表示*/
+}
+/*ボタンの色*/
+.main-nav a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(21, 1, 77);
+    position: relative;
+    text-decoration: none;
+}
+.main-nav a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background: rgb(68, 0, 255);
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: 0.5s;
+}
+/*ボタンにカーソルを合わせたときの色*/
+.main-nav a:hover{
+    color: rgb(68, 0, 255);
+}
+.main-nav a:hover:before{
+    transform: scale(1);
+}
+
+.page-header{
+    display: flex;                  /*横並びの設定*/
+    justify-content: space-between; /*両端の設置の設定*/
+    padding: 0 120px;               /*余白の設定*/
+    position: fixed; /*固定*/
+    inset: 0;        /*横幅いっぱい*/
+    z-index:10000;   /*最前面*/
+    height: 100px;   /*高さ*/ 
+    background-color: #ddafddd7;  /*色*/
+}
+.wrapper{
+    max-width: 1300px;    /*横幅最大1100px*/
+    margin: 0 auto;       /*中央に配置する指定*/
+    padding: 0 4%;        /*スマートフォン向け余白の設定*/
+}
+
+/*===トップ画像のアニメーション===*/
+.img-frame{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.img-01, .img-02, .img-03, .img-04, .img-05{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f1f0ff10;
+    background-blend-mode: screen;
+}
+.img-01{
+    background-image: url('images/news/CORE_3rd.JPG');
+    animation: slide-animation-01 60s infinite;
+    background-position: 50% 58%;
+}
+.img-02{
+    background-image: url('images/news/2022Honaki_2.jpg');
+    animation: slide-animation-02 60s infinite;
+    background-position: 50% 75%;
+    }
+.img-03{
+    background-image: url('images/news/2022Honaki_1.jpg');
+    animation: slide-animation-03 60s infinite;
+    background-position: 50% 75%;
+    /*ぼかし*/
+    -ms-filter: blur(1px);
+	filter: blur(1px);
+}
+.img-04{
+    background-image: url('images/news/spm24th_1.JPG');
+    animation: slide-animation-04 60s infinite;
+    background-position: 50% 70%;
+    /*ぼかし*/
+    -ms-filter: blur(1px);
+	filter: blur(1px);
+}
+.img-05{
+    background-image: url('images/news/spm22nd_2.jpg');
+    animation: slide-animation-05 60s infinite;
+    background-position: 50% 50%;
+    /*ぼかし*/
+    -ms-filter: blur(2px);
+	filter: blur(2px);
+}
+@keyframes slide-animation-01{
+    0% {opacity: 1; transform: scale(1.2);}
+    17% {opacity: 1;}
+    25% {opacity: 0; transform: scale(1.0);}
+    90% {opacity: 0}
+    100% {opacity: 1; transform: scale(1.2);}
+}
+@keyframes slide-animation-02{
+    0% {opacity: 0;}
+    15% {opacity: 0; transform: scale(1.0);}
+    20% {opacity: 1;}
+    37% {opacity: 1;}
+    45% {opacity: 0; transform: scale(1.4);}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-03{
+    0% {opacity: 0;}
+    35% {opacity: 0; transform: scale(1.0);}
+    40% {opacity: 1;}
+    57% {opacity: 1;}
+    65% {opacity: 0; transform: scale(1.2);}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-04{
+    0% {opacity: 0;}
+    55% {opacity: 0; transform: scale(1.1);}
+    60% {opacity: 1;}
+    77% {opacity: 1;}
+    85% {opacity: 0; transform: scale(1.0);}
+    100% {opacity: 0;}
+}
+@keyframes slide-animation-05{
+    0% {opacity: 0.1; transform: scale(1.05);}
+    5% {opacity: 0;  transform: scale(1.1);}
+    75% {opacity: 0;  transform: scale(1.0);}
+    80% {opacity: 1;}
+    95% {opacity: 1;}
+    100% {opacity: 0.1; transform: scale(1.05);}
+}
+
+
+.top-sentence{
+    position: absolute; /*配置*/
+    background: -webkit-linear-gradient(00deg,#ffffff00, #ffffff40, #ffffff99, #ffffff40, #ffffff00);
+    top: 200px;  /*位置*/
+    left: 50%; /*位置*/
+    width: 90%;
+    margin-top: 3%;
+    text-align: center;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.page-title{
+    font-size: 5rem;                    /*フォントサイズ*/
+    font-weight: 800;
+    font-family: 'Constantia', serif;   /*フォント*/
+    color: rgb(188, 255, 255);        /*色*/
+    display: inline-block;
+    background: -webkit-linear-gradient(30deg,#FD6585,#884daf,#0d91b9); /*グラデーション*/
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /*切り抜き*/
+    -webkit-text-stroke: 1px #002ab3;   /*縁取り*/
+}
+.top-underline{
+    position: relative;
+    display: inline-block;
+    -webkit-text-stroke: 1px #002ab3;
+    height: 3px;
+    border-width: 0;
+    background-color: #00bcd4;
+    background-image: -webkit-linear-gradient(135deg, #FD6585 10%, #0d91b9 100%);
+    background-image: linear-gradient(135deg, #FD6585 10%, #0d91b9 100%);
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+
+/*=============ニュースページのCSS設定============*/
+.news-contents{
+    display: flex;                    /*横並びの設定*/
+    justify-content: space-between;   /*横並びの設定*/
+    margin-bottom: 50px;              /*下部余白の設定*/
+    margin-top: 20px;
+}
+.news-contents p{
+    margin-bottom: 1rem;
+}
+article{
+    width: 72%;     /*メイン記事の設定*/
+    order: 2;
+}
+article div{
+    padding: 2%;
+    background: #fff7fd;
+}
+aside{
+    background: #f9f7ff;
+    padding: 1% 1%;
+    width: 26%;     /*サイドバーの設定*/
+    order: 3;
+}
+aside p{
+    padding: 3%;
+    padding-bottom: 40px;
+}
+
+/*画像について*/
+.news-image{
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.news-image img{
+    border: 1px solid rgb(75, 149, 167);
+}
+
+
+/*====ボタンの設定====*/
+.news-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 220px;
+    color: rgb(204, 0, 255);
+    padding: 0.35rem 1.75rem;
+    font-size: 15px;
+    font-weight: 700;
+    border: 2px solid rgb(204, 0, 255);
+}
+.news-button::after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid rgb(204, 0, 255);
+    border-right: 3px solid rgb(204, 0, 255);
+    transform: rotate(45deg);
+}
+.news-button:hover {
+    color: #333333;
+    text-decoration: none;
+    background-color: #d3a0cf;
+}
+.news-buotton:hover::after {
+    border-top: 3px solid #333333;
+    border-right: 3px solid #333333;
+}
+.flex-1{
+    display: flex;
+    margin: 0 100px;
+}
+
+
+/*以下, タイトルの装飾*/
+.post-info{
+    position: relative;  /*相対位置への配置*/
+    padding-top: 4px;    
+    margin-bottom: 30px;
+}
+.post-date{
+    background: rgb(204, 0, 255);  /*背景の色*/
+    border-radius: 50%;  /*最大値(半径)*/
+    color: #fff;       /*文字の色*/
+    width: 100px;         /*幅*/
+    height: 100px;        /*高さ*/
+    font-size: 1.625rem;  /*フォントサイズ*/
+    text-align: center;   /*配置*/
+    position: absolute;   /*配置*/
+    top: 0;
+    padding-top: 10px;
+}
+.post-date span{
+    font-size: 1rem;    /*フォントサイズの指定*/
+    border-top: 2px rgba(255, 255, 255, .5) solid;
+    padding-top: 6px;   /*要素の内側, 上部のマージン*/
+    display: block;     /*表示方法*/
+    width: 60%;         /*幅*/
+    margin: 0 auto;     /*マージン無し*/
+}
+.post-title{
+    font-family: "Yu Mincho", "YuMincho", serif; /*フォントの指定*/
+    font-size: 2rem;
+    font-weight: normal;
+}
+.post-title,
+.post-cat{
+    margin-left: 120px;
+}
+
+
+
+/*区切り線*/
+article hr{
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #444343, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #444343, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #444343, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #444343, #f0f0f0);
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+/*ページトップに飛ぶボタン*/
+#to-top{
+    text-align: center; /*ボタンの中央揃え*/
+}
+.to-top-button{
+    color: #190b97;
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: #e7e7e7;
+    padding: 5px 10px;
+    border: 1.5px solid #002ab3;
+    box-shadow: 0 3px 0 #002ab3;
+    border-radius: 100px;
+    display: inline-block;
+    transition: .3s;
+}
+.to-top-button:hover {
+    transform: translateY(5px);
+    background: #ffffff;
+    box-shadow: 0 0 0 #002ab3;
+}
+
+/*======SNSリンクの設定======*/
+.twitter-timeline{
+    padding-top: 10px;
+}
+/*===サブカラムの設定===*/
+.sub-title{
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #ff8888 solid;
+    font-weight: normal;
+}
+.sub-menu{
+    margin-bottom: 60px; /*下部の余白*/
+    list-style: none;    /*リストの丸点を非表示*/
+}
+.sub-menu li{
+    border-bottom: 1px #c7c7c7 solid; /*カテゴリーごとに線分けして表示*/
+}
+.sub-menu a{
+    color: #432;
+    padding: 10px;  /*リンクのクリックできる範囲を広げる*/
+    display: block; /*リンクのクリックできる範囲を広げる*/
+}
+.sub-menu a:hover{
+    color: #ff8888; /*カーソルを合わせたときの変化*/
+}
+
+/*フッターの設定*/
+footer{
+    background: rgb(0, 65, 150);  /*色の設定*/
+    text-align: center;
+    padding: 26px 0;     /*余白の設定(上下, 左右)*/
+}
+footer p{
+    color: #fff;        /*色の設定*/
+    font-size: 0.875rem;  /*フォントサイズ*/
+}
+
+
+
+
+@media screen and (max-width:800px){
+    body{
+        display:none
+    }
+}

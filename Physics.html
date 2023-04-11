@@ -1,0 +1,279 @@
+<!--Document Typeを指定-->
+<!DOCTYPE html> 
+<!--言語の指定-日本語-->
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">        <!--文字コード-->
+        <title>Test news page</title>  <!--タイトル-->
+        <meta name="description" content="ウェブページ作成の練習">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  <!--レスポンシブ対応-->
+
+        <!--CSS-->
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">              <!--ress.cssの指定-->
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">   <!--Google Fontsの指定-->
+        <link href="Physics.css" rel="stylesheet">                                              <!--CSSの指定-->
+
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <!--以下, クリックでの画像拡大に関する設定-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+    </head>
+
+
+
+    <body>
+        <!--ヘッダー-->
+        <header class="page-header">
+            <h1> <!--h1にロゴを配置-->
+                <a href="index.html"><img class="icon" src="images/icon.jpg" alt="Test"></a>
+            </h1>
+            <nav> <!--ナビゲーションメニュー-->
+                <ul class="main-nav">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="News.html">近況報告</a></li>
+                    <li><a href="Astrophoto.html">ギャラリー</a></li>
+                    <li><a href="#">備忘録</b></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="img-frame">
+            <div class="img-01"></div>
+        </div>
+        <div class="top-sentence">
+            <h1 class="page-title">備忘録</h1>
+            <hr class="top-underline">
+        </div>
+
+        <div class="physics-contents wrapper">
+            <article>
+                <div id="Physics">
+                    <h3 class="phys-title">物理学のまとめ</h3>
+                    <p class="intro">
+                        　物理学についての教科書や, 作成したPDF等を共有しようかなと考えています. 
+                        このページ全体については, 適宜更新をしようと思いますので, 完成するまでしばらくお待ちください.<br>
+                        　詳細ページは以下の各分野のアイコンをクリックすると飛ぶことができます. 
+                        注意として, 「力学 と 解析力学」, 「熱力学 と 統計力学」, 「特殊相対性理論 と 一般相対性理論」
+                        は同じページに飛ぶ仕様になっております. 
+                    </p>
+
+                    <div class="physics-skills">
+                        <div class="physics-item">
+                            <a href="physics-site/mechanics.html">
+                                <img src="images/physics/mechanics.jpg" alt="">
+                                <p>力学</p>
+                            </a>
+                        </div>
+                        <div class="physics-item">
+                            <a href="physics-site/electromagnetics.html">
+                                <img src="images/physics/electromagnetics.jpg" alt="">
+                                <p>電磁気学</p>
+                            </a>
+                        </div>
+                        <div class="physics-item">
+                            <a href="physics-site/mechanics.html">
+                                <img src="images/physics/analyticalmechanics.jpg" alt="">
+                                <p>解析力学</p>
+                            </a>
+                        </div>
+                        <div class="physics-item">
+                            <a href="physics-site/thermodynamics.html">
+                                <img src="images/physics/thermodynamics.jpg" alt="">
+                                <p>熱力学</p>
+                            </a>
+                        </div>
+                        <div class="physics-item">
+                            <a href="physics-site/thermodynamics.html">
+                                <img src="images/physics/statisticalmechanics.jpg" alt="">
+                                <p>統計力学</p>
+                            </a>
+                        </div>
+                        <div class="physics-item">
+                            <a href="physics-site/quantummechanics.html">
+                                <img src="images/physics/quantummechanics.jpg" alt="">
+                                <p>量子力学</p>
+                            </a>
+                        </div>
+                        <div class="physics-item">
+                            <a href="physics-site/fluidmechanics.html">
+                                <img src="images/physics/fluidmechanics.jpg" alt="">
+                                <p>流体力学</p>
+                            </a>
+                        </div>
+                        <div class="physics-item">
+                            <a href="physics-site/specialrelativity.html">
+                                <img src="images/physics/specialrelativity.jpg" alt="">
+                                <p>特殊相対論</p>
+                            </a>
+                        </div>
+                        <div class="physics-item">
+                            <a href="physics-site/specialrelativity.html">
+                                <img src="images/physics/generalrelativity.jpg" alt="">
+                                <p>一般相対論</p>
+                            </a>
+                        </div>
+                        <div class="physics-item">
+                            <a href="physics-site/QFT.html">
+                                <img src="images/physics/QFT.jpg" alt="">
+                                <p>場の量子論</p>
+                            </a>
+                        </div>
+                        <div class="physics-item">
+                            <a href="physics-site/condensedmatter.html">
+                                <img src="images/physics/condensedmatter.jpg" alt="">
+                                <p>物性物理学</p>
+                            </a>
+                        </div>
+                        <div class="physics-item">
+                            <a href="physics-site/astrophysics.html">
+                                <img src="images/physics/astrophysics.jpg" alt="">
+                                <p>宇宙物理学</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div id="astro-event">
+                    <h3 class="phys-title">天文関連のまとめ</h3>
+                    <p class="intro">
+                        今年度に起こる天体イベントをここにまとめます. 基本的には「天文年鑑」や「星ナビ」
+                        に掲載されているイベントがほとんどだと思いますが, 突然の彗星来訪などのイベントは, 
+                        適宜更新していきますので, お楽しみに！
+                    </p>
+                    
+                    <section>
+                        <h3 class="title"><b>今年度の主な天体ショー ▼</b></h3>
+                        <div class="box">
+                            <table class="astro-table">
+                                <tr>
+                                    <th>
+                                        <h4>4月</h4>
+                                        <img src="images/Hanafuda/4.jpg" alt="">
+                                    </th>
+                                    <td>テキストが入ります</td>
+                                </tr>
+                                    <tr>
+                                    <th>
+                                        <h4>5月</h4>
+                                        <img class="astro-table-image" src="images/Hanafuda/5.jpg" alt="">
+                                    </th>
+                                    <td>テキストが入ります</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <h4>6月</h4>
+                                        <img src="images/Hanafuda/6.jpg" alt="">
+                                    </th>
+                                    <td>テキストが入ります</td>
+                                </tr>
+                                    <tr>
+                                    <th>
+                                        <h4>7月</h4>
+                                        <img class="astro-table-image" src="images/Hanafuda/7.jpg" alt="">
+                                    </th>
+                                    <td>テキストが入ります</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <h4>8月</h4>
+                                        <img src="images/Hanafuda/8.jpg" alt="">
+                                    </th>
+                                    <td>テキストが入ります</td>
+                                </tr>
+                                    <tr>
+                                    <th>
+                                        <h4>9月</h4>
+                                        <img class="astro-table-image" src="images/Hanafuda/9.jpg" alt="">
+                                    </th>
+                                    <td>テキストが入ります</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <h4>10月</h4>
+                                        <img src="images/Hanafuda/10.jpg" alt="">
+                                    </th>
+                                    <td>テキストが入ります</td>
+                                </tr>
+                                    <tr>
+                                    <th>
+                                        <h4>11月</h4>
+                                        <img class="astro-table-image" src="images/Hanafuda/11.jpg" alt="">
+                                    </th>
+                                    <td>テキストが入ります</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <h4>12月</h4>
+                                        <img src="images/Hanafuda/12.jpg" alt="">
+                                    </th>
+                                    <td>テキストが入ります</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <h4>1月</h4>
+                                        <img src="images/Hanafuda/1.jpg" alt="">
+                                    </th>
+                                    <td>テキストが入ります</td>
+                                </tr>
+                                    <tr>
+                                    <th>
+                                        <h4>2月</h4>
+                                        <img class="astro-table-image" src="images/Hanafuda/2.jpg" alt="">
+                                    </th>
+                                    <td>テキストが入ります</td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <h4>3月</h4>
+                                        <img src="images/Hanafuda/3.jpg" alt="">
+                                    </th>
+                                    <td>テキストが入ります</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </section>
+                </div>
+
+                <div id="other">
+                    <h3 class="phys-title">その他まとめ</h3>
+                    under constlucting
+                </div>
+            </article>
+
+
+            <aside>
+                <h3 class="sub-title">このページについて</h3>
+                <p>
+                    ここは, 僕が個人的に勉強した本やその内容をまとめたり, 
+                    天文イベントをまとめたりと, 何か残しておきたいものなどを書き綴るページです.
+                </p>
+                <h3 class="sub-title">カテゴリー</h3>
+                <ul class="sub-menu">
+                    <li><a href="#physics">物理学まとめ</a></li>
+                    <li><a href="#astro-event">天文イベント</a></li>
+                    <li><a href="#other">その他</a></li>
+                </ul>
+                <h3 class="sub-title">Twitter</h3>
+                <a class="twitter-timeline" data-height="1000" href="https://twitter.com/ximu_astro?ref_src=twsrc%5Etfw">Tweets by ximu_astro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </aside>
+        </div>
+        
+
+        <!--トップに戻るボタン-->
+        <p id="to-top"><a href="#" class="to-top-button">トップに戻る</a></p>
+        
+        <!--フッター-->
+        <footer>
+            <p><small>Presented by @Ximu_astro</small></p>
+        </footer>
+
+        <!--Javascriptの読み込み-->
+        <script src="Introduce.js"></script>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    </body>
+</html>
