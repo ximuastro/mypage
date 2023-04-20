@@ -223,6 +223,7 @@ th{
 td{
     background-color:  #ffeded75; /* 背景色指定 */
     border: 1px solid #b67b7b75;
+    text-align: left;
 }
 .astro-table th img{
     max-width: 60px;
@@ -273,7 +274,13 @@ td{
     display: none;/*はじめは非表示*/
     margin:0 3% 0 3%;
 }
-
+.box h3{
+    margin-left: 3%;
+}
+.box p{
+    margin-left: 5%;
+    margin-bottom: 3%;
+}
 
 /*ページトップに飛ぶボタン*/
 #to-top{
