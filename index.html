@@ -1,0 +1,879 @@
+<!--Document Typeを指定-->
+<!DOCTYPE html> 
+<!--言語の指定-日本語-->
+<html lang="ja">
+<head>
+    <meta charset="utf-8">        <!--文字コード-->
+    <title>Ximu_index</title>  <!--タイトル-->
+    <meta name="description" content="Ximuの紹介ページ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!--レスポンシブ対応-->
+
+    <!--javascript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">              <!--ress.cssの指定-->
+    <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">   <!--Google Fontsの指定-->
+    <link href="Index.css" rel="stylesheet">                                              <!--CSSの指定-->
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!--以下, クリックでの画像拡大に関する設定-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <!--Javascriptの読み込み-->
+    <script src="Index.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!--ヘッダー-->
+    <header class="page-header">
+        <h1> <!--h1にロゴを配置-->
+            <a href="index.html"><img class="icon" src="images/icon.jpg" alt="Test"></a>
+        </h1>
+    </header>
+    <!--トップ画像-->
+
+    <div id="top">
+        <div class="slide">
+            <img class="slide-item" src="images/Astrophoto/eclips_2.jpg" alt="">
+            <img class="slide-item" src="images/Astrophoto/milkyway.jpg" alt="">
+            <img class="slide-item" src="images/Astrophoto/andromeda.jpg" alt="">
+            <img class="slide-item" src="images/Astrophoto/rose.jpg" alt="">
+            <img class="slide-item" src="images/Astrophoto/Sanretsu_Higata.jpg" alt="">
+        </div>
+    </div>
+    <div class="top-sentence">
+        <h1 class="page-title">My Page</h1>
+        <hr class="top-underline">
+    </div>
+
+
+    <!--=========================画像のブロック配列==========================-->
+    <div class="grid wrapper">
+        <div class="gallery-intro">
+            <h3 class="gallery-intro-title-1">ページ主の自己紹介</h3>
+            
+            <div class="intro-text">
+                <h2>細木 雄登 (Yuto Hosogi)</h2>
+
+                <p><b>誕生日：</b>2000年5月</p>
+                <p><b>出身：</b>高知県生まれ</p>
+                <p>
+                    <b>大学：</b>名古屋大学・大学院<br>
+                    <a href="https://www.nuasa.org/">名古屋大学天体研究会(NuASA)</a>所属
+                </p>
+                <p>
+                    <b>趣味：</b><br>
+                    天体観測, 読書, 散歩, 鉛筆画, 気象.etc
+                </p>
+            </div>
+            
+        </div>
+
+        <div class="gallery-intro">
+            <h3 class="gallery-intro-title-2">ひとこと</h3>
+            <p>
+                多趣味な私の簡単な紹介ページになればと考えています。<br>
+                以下は簡単な略歴。
+            </p>
+            <ul class="cp_list">
+                <li>
+                    2023年度天文冬の陣実行委員長
+                </li>
+                <li>
+                    数物セミナー2023年度副会長
+                </li>
+                <li>2021・2022年度天体研究会（機材）</li>
+            </ul>
+            <p>
+                <a class="news-button" href="https://twitter.com/Fuyunojin_astro/">天文冬の陣公式X</a>
+                <a class="news-button" href="https://physicsmathematicsseminar.github.io/physmathseminar.github.io/index.html">数物セミナー公式HP</a>
+            </p>
+        </div>
+
+        <div class="gallery-intro">
+            <h3 class="gallery-intro-title-3">このページについて</h3>
+            <p>
+                ここでは、「My Page」と書いていますが、私の一番の趣味である天体観測/天体写真について、
+                そのギャラリーを紹介がメインです。
+                写真撮影や編集の技術はまだまだですが、私の見た美しい星空や風景を少しでも共有できたらいいなと思ってます。<br>
+                画像クリックで拡大写真と解説が出るよ。
+            </p>
+            <hr>
+            <h4>SNSはここから ▼</h4>
+            <div class="sns-box">
+                <ul class="sns">
+                    <li><a href="https://twitter.com/ximu_astro"><i class="fa-brands fa-square-twitter fa-2xl"></i></a></li>
+                    <li><a href="https://www.instagram.com/stellar_ximu/"><i class="fa-brands fa-square-instagram fa-2xl"></i></a></li>
+                    <li><a href="https://www.facebook.com/people/%E7%B4%B0%E6%9C%A8%E9%9B%84%E7%99%BB/pfbid031MSQ3cSANfCX8r9AL42HKnkDZCUiAMAFLzFpMLHeNbxrv13t22sTE4zRfmjBqMmzl/"><i class="fa-brands fa-square-facebook fa-2xl"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--No.23-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal23">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/Sanretsu_Higata.jpg" alt="">
+                    </div>
+                    <h3>三裂星雲・干潟星雲</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.22-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal22">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/Komochi.jpg" alt="">
+                    </div>
+                    <h3>子持ち銀河</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.21-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal21">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/M13.jpg" alt="">
+                    </div>
+                    <h3>M13球状星団</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.20-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal20">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/eclips_1.jpg" alt="">
+                    </div>
+                    <h3>11/8 皆既月蝕&天王星蝕</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.19-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal19">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/eclips_2.jpg" alt="">
+                    </div>
+                    <h3>11/8 皆既月蝕(経過)</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.18-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal18">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/rose.jpg" alt="">
+                    </div>
+                    <h3>ばら星雲</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.17-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal17">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/venus.jpg" alt="">
+                    </div>
+                    <h3>昼間の金星</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--NO.16-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal16">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/moon_1.jpg" alt="">
+                    </div>
+                    <h3>月の地球照</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.15-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal15">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/m81_82.jpg" alt="">
+                    </div>
+                    <h3>M81 / M82 (おおぐま座)</h3>
+                </div>
+            </a>
+        </div>   
+
+        <!--No.14-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal14">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/ami.jpg" alt="">
+                    </div>
+                    <h3>網状星雲</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.13-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal13">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/jupiter_and_saturn.JPG" alt="">
+                    </div>
+                    <h3>木星と土星の接近</h3>
+                </div>
+            </a>
+        </div>   
+
+        <!--No.12-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal12">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/stargazing.jpg" alt="">
+                    </div>
+                    <h3>天体観測(木星と土星の接近)</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.11-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal11">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/milkyway.jpg" alt="">
+                    </div>
+                    <h3>夏の天の川</h3>
+                </div>
+            </a>
+        </div>   
+
+        <!--No.10-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal10">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/andromeda.jpg" alt="">
+                    </div>
+                    <h3>アンドロメダ銀河</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.09-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal09">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/moon_2.jpg" alt="">
+                    </div>
+                    <h3>中秋名月</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.08-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal08">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/cherry_and_star.jpg" alt="">
+                    </div>
+                    <h3>夜桜</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.07-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal07">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/nebula.jpg" alt="">
+                    </div>
+                    <h3>オリオン大星雲</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.06-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal06">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/pleiades.jpg" alt="">
+                    </div>
+                    <h3>プレアデス星団(すばる)</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.05-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal05">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/ngc2392.jpg" alt="">
+                    </div>
+                    <h3>NGC2392(エスキモー星雲)</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.04-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal04">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/ngc6530.jpg" alt="">
+                    </div>
+                    <h3>NGC6530(干潟星雲)</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.03-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal03">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/night_nagoya.jpg" alt="">
+                    </div>
+                    <h3>名古屋市街の夜景</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.02-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal02">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/big_dipper.jpg" alt="">
+                    </div>
+                    <h3>沈みゆく北斗七星</h3>
+                </div>
+            </a>
+        </div>
+
+        <!--No.01-->
+        <div class="content">
+            <a class="js-modal-open" href="" data-target="modal01">
+                <div class="item">
+                    <div class="image_mouseover_1">
+                        <img src="images/Astrophoto/fire_tree.jpg" alt="">
+                    </div>
+                    <h3>馬頭星雲 / 燃える木星雲</h3>
+                </div>
+            </a>
+        </div>
+    </div>
+  
+    <!--=========================画像のモーダル==========================-->
+    <div>
+        <!--No.23-->
+        <div id="modal23" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/Sanretsu_Higata.jpg" alt="">
+                    <div>
+                        <h3>三裂星雲・干潟星雲</h3>
+                        <p>
+                            　三裂星雲（左）と干潟星雲（右）はともに散光星雲であり、その姿は肉眼でも確認できるほど明るいです。
+                            三裂星雲は赤と青のコントラストがとても綺麗で、私のお気に入りの天体のひとつです。<br>
+                            　この天体は、太陽系から見てちょうど天の川の中心方向に位置しています。そのため、
+                            背景に見える星の数が桁違いに多いです。また、天の川の中は濃い星間ガス帯が存在し、
+                            星の光を吸収してしまう領域が存在しています。それが、黒く見えている部分になります。
+                        </p>
+                    </div>
+                </div>
+            
+            </div><!--modal__inner-->
+        </div>
+
+        <!--No.22-->
+        <div id="modal22" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/Komochi.jpg" alt="">
+                    <div>
+                        <h3>M13球状星団</h3>
+                        <p>
+                            　子持ち銀河はりょうけん座にある渦巻銀河である. 渦巻銀河NGC 519aから4' 35"離れたすぐ近くに伴銀河NGC 5195があることが名前の由来であり, 
+                            伴銀河を含めて子持ち銀河と呼ぶ場合もある（このときNGC 5194をM51A、NGC 5195をM51Bと表記することがある）. 直径はおよそ10万光年.
+                            大型の望遠鏡で高倍率を出すと, その姿を肉眼でも見ることができる. かなりぼやけてはいるが...
+                        </p>
+                    </div>
+                </div>
+            
+            </div><!--modal__inner-->
+        </div>
+
+        <!--No.21-->
+        <div id="modal21" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/M13.jpg" alt="">
+                    <div>
+                        <h3>M13球状星団</h3>
+                        <p>
+                            　球状星団とは、字のごとく星が球状の形に集まった星団です. この頭文字の「M」は「メシエ天体」の略で, 
+                            カタログ化された天体を指します. つまりメシエ天体カタログの13番目という事. このM13球状星団は, 
+                            日本から観れる球状星団の中で最も明るいものになってます. 小型の望遠鏡でもその姿を確認でき, 
+                            私も初めて見たときは感動しました.
+                        </p>
+                    </div>
+                </div>
+            
+            </div><!--modal__inner-->
+        </div>
+
+        <!--No.20-->
+        <div id="modal20" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/eclips_1.jpg" alt="">
+                    <div>
+                        <h3>11/8 皆既月蝕&天王星蝕</h3>
+                        <p>
+                            　2022年11月8日に起こった皆既月食ですが, 稀有なことに, 同日同時間帯で天王星蝕も起こりました. 
+                            これがそのときの写真なのですが, 皆既蝕中の赤い月の左下に見える青い星が天王星です.
+                        </p>
+                    </div>
+                </div>
+            
+            </div><!--modal__inner-->
+        </div>
+
+        <!--No.19-->
+        <div id="modal19" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/eclips_2.jpg" alt="">
+                    <div>
+                        <h3>11/8 皆既月蝕</h3>
+                        <p>
+                            　2022年11月8日に起こった皆既月食の写真を時間経過に合わせて合成しました. 地球の影の形が綺麗にわかりますね.
+                        </p>
+                    </div>
+                </div>
+            
+            </div><!--modal__inner-->
+        </div>
+
+        <!--No.18-->
+        <div id="modal18" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/rose.jpg" alt="">
+                    <div>
+                        <h3>バラ星雲</h3>
+                        <p>
+                            　この星雲は冬の有名な星座であるオリオン座の近くにあります. 具体的には, 
+                            オリオン座のベテルギウス・おおいぬ座のシリウス・こいぬ座のプロキオンの構成される冬の大三角の中心付近, 
+                            いっかくじゅう座に位置しています. 星雲は淡くて肉眼で見えるのは中心部分にある散開星団のみですが, 
+                            写真に撮ってみると, 美しい赤が写ります. <br>
+                            　このバラ星雲は, 中心部分に穴が開いたように見えるその形状から, 田中芳樹先生の「銀河英雄伝説」
+                            (漫画版)において, 作中に登場するイゼルローン回廊の背景画像のモデルとして使われたりしています.
+                        </p>
+                    </div>
+                </div>
+            
+            </div><!--modal__inner-->
+        </div>
+
+        <!--No.17-->
+        <div id="modal17" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/venus.jpg" alt="">
+                    <div>
+                        <h3>昼間の金星</h3>
+                        <p>
+                            　金星は「明けの明星」「宵の明星」として親しまれているほど, 非常に明るく夜空に輝いている. 
+                            最も明るく輝くころになった金星は日中でも青空の中に見つけることができる. 
+                            この写真はそれを撮影したものである. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.16-->
+        <div id="modal16" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/moon_1.jpg" alt="">
+                    <div>
+                        <h3>月の地球照</h3>
+                        <p>
+                            　月は本来, 太陽の光を反射することで輝いて見えているが, 
+                            一ヶ月間で数日中, 三日月のときだけ, その影の部分がうっすら見えるといったことを経験した人もいるのではなかろうか？
+                            それは, 地球が太陽の光を反射し, その反射光が月を照らしているからである. これを撮影したものがこの写真である. 
+                            月の海までくっきりと見えていて非常に興味深い.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.15-->
+        <div id="modal15" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/m81_82.jpg" alt="">
+                    <div>
+                        <h3>M81 / M82</h3>
+                        <p>
+                            　おおぐま座にある銀河, 500mm程度の焦点距離を持つレンズで撮影したが, 
+                            思いのほか明るく綺麗に映った. 右が渦巻銀河M81, 左が不規則銀河M82(葉巻銀河)
+                            である. M82内部では非常に活発な星形成が起こっており, そのため, この銀河は「スターバースト銀河」に分類されている.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.14-->
+        <div id="modal14" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/ami.jpg" alt="">
+                    <div>
+                        <h3>網状星雲</h3>
+                        <p>
+                            　はくちょう座にある超新星残骸. 星がその一生の終わりに起こす大爆発のことを超新星爆発と呼ぶが, 
+                            その残骸が超新星残骸である. 非常に淡く, 長時間露光してやっと映る程度である.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.13-->
+        <div id="modal13" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/jupiter_and_saturn.JPG" alt="">
+                    <div>
+                        <h3>木星と土星の接近</h3>
+                        <p>
+                            　2020年12月中旬に起こった, とても稀有な天文イベント. 
+                            木星と土星が非常に近くまで接近したこのイベントでは, 
+                            サークル所有の望遠鏡の中でも最も倍率の高いものを用いて撮影に臨んだ. 
+                            写真上の楕円形をした光点が土星, 下の光芒の出ている光点が木星である(それぞれの衛星もいくつか写っている). 
+                            太陽系内で1, 2の大きさを持つ2惑星が同一視野に見えた感動は今も忘れられない. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.12-->
+        <div id="modal12" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/stargazing.jpg" alt="">
+                    <div>
+                        <h3>天体観測</h3>
+                        <p>
+                            　土星と木星の最接近を観測した時の観測風景です. 
+                            望遠鏡は高橋製作所のμ-250望遠鏡です. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.11-->
+        <div id="modal11" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/milkyway.jpg" alt="">
+                    <div>
+                        <h3>夏の天の川</h3>
+                        <p>
+                            　天の川が見れるのは夏か冬かのどちらかですが, 圧倒的に夏の天の川の方が美しい. 
+                            それは, 見ている方向が銀河系の中心方向であり, 天の川もそれに合わせて大きく太く流れている. 
+                            暗い場所に行けば, 肉眼でもその存在が認識できるが, カメラを通して見た天の川は, 
+                            息をのむほど美しい.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.10-->
+        <div id="modal10" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/andromeda.jpg" alt="">
+                    <div>
+                        <h3>アンドロメダ銀河</h3>
+                        <p>
+                            　北半球から見れる銀河の中では最も明るく見える. 肉眼でもその存在は容易にわかり, 
+                            望遠鏡を使うと, 淡い楕円体として認識できます. <br>
+                            　アンドロメダ銀河は我々の住む銀河系からして隣の銀河で, 
+                            お互いの重力によって引きつけ合っています. そのため, 遠い遠い未来には, 
+                            これら2つの銀河は合体すると考えられており, 時期尚早すぎながらも, 合体後の銀河の名前も考えられています. 
+                            名前を安直につなげて「ミルコメダ(Milkomeda)銀河」や「ミルクドロメダ(Milkdromeda)銀河」と呼ばれます.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.09-->
+        <div id="modal09" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/moon_2.jpg" alt="">
+                    <div>
+                        <h3>中秋名月</h3>
+                        <p>
+                            　日本人にとって月は昔から特別な存在. 高倍率で撮影した月は, 
+                            クレーターや海が綺麗に映っていました.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.08-->
+        <div id="modal08" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/cherry_and_star.jpg" alt="">
+                    <div>
+                        <h3>夜桜</h3>
+                        <p>
+                            　地元高知で撮影したものです. 桜並木と星々の日周運動を比較明合成で編集しました.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.07-->
+        <div id="modal07" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/nebula.jpg" alt="">
+                    <div>
+                        <h3>オリオン大星雲</h3>
+                        <p>
+                            　勇者オリオンの剣のあたりに輝く, 有名な大散光星雲です. 
+                            眼視で観察しても写真に撮影しても, どんな口径でもすばらしい美しさを見せてくれます. 
+                            メシエは1771年に, 蝶あるいは鳥が羽を広げたような姿とトラペジウムをスケッチに残しています. 
+                            明るい天体なので, 望遠鏡が発明される以前から存在は知られていました. 
+                            活発な星生成活動が行われていて, トラペジウムなどの星の紫外線によって水素ガスが電離して光る水素電離領域(HII領域)です. <br>
+                            　望遠鏡での観測は, 口径が大きいほど周囲の淡い光芒の部分が見えてきてすばらしくなります. 
+                            羽を広げたような姿という印象は共通していますが, 人によって蝶, 鳥, 白鳥, 
+                            こうもりなどいろいろな動物をあげます. 都会地でも双眼鏡で存在がわかります. 倍率15倍を超え, 
+                            かつ口径が10cm以上の双眼鏡では, 微妙な光の筋が乱れるさまが見え, 息を呑むような美しさとなります.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.06-->
+        <div id="modal06" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/pleiades.jpg" alt="">
+                    <div>
+                        <h3>プレアデス星団(すばる)</h3>
+                        <p>
+                            　この天体は冬に見える星座, おうし座の背中に位置しています. 
+                            プレアデス星団は最も有名な天体, 散開星団のひとつで, 太古の昔より, 
+                            数多の星図に描かれてきました. 日本ではすばるの和名で知られ, 枕草子から某有名自動車会社名として登場します. <br>
+                            　肉眼では6, 7個の恒星の集団として見ることができます. カメラで撮影すると, 
+                            その星団の背景に淡い青の星雲があることが分かります. これはメローペ星雲という名前で呼ばれています.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.05-->
+        <div id="modal05" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/ngc2392.jpg" alt="">
+                    <div>
+                        <h3>NGC2392(エスキモー星雲)</h3>
+                        <p>
+                            　ふたご座にある惑星状星雲であるエスキモー星雲は, この写真では分かりにくいですが, 
+                            イヌイットの伝統民族衣装であるエスキモーに似たその形状から, そう呼ばれるようになりました. 
+                            とても地味な星雲で, 望遠鏡による導入でもとても苦労します. そのうえ, 
+                            天体の見かけのサイズもとても小さいため, 大型の望遠鏡で見ることをおすすめします.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.04-->
+        <div id="modal04" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/ngc6530.jpg" alt="">
+                    <div>
+                        <h3>NGC6530(干潟星雲)</h3>
+                        <p>
+                            　天の川の中心方向, いて座とさそり座の中間付近に位置する干潟星雲. 
+                            天の川の真ん中だけあって, 後ろの星が桁違いに多く見えています.
+                            この写真は中心付近に2つの散光星雲が写っています. 中央やや右上の三裂星雲と中央やや左下の干潟星雲です. 
+                            三裂星雲はさらに高倍率で撮影すると, 美しい青と赤のコントラストが見えます.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.03-->
+        <div id="modal03" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/night_nagoya.jpg" alt="">
+                    <div>
+                        <h3>名古屋市街の夜景</h3>
+                        <p>
+                            　私の通う名古屋大学から望んだ名古屋中心市街の夜景です. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.02-->
+        <div id="modal02" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/big_dipper.jpg" alt="">
+                    <div>
+                        <h3>沈みゆく北斗七星</h3>
+                        <p>
+                            　北斗七星は, ほとんどの方が聞いたことのある名前だと思います. 北斗七星はおおぐま座という星座の一部で, 
+                            北極星を見つけるめあてにもよく使われます. 冬の終わりごろから見え始め, 夏の終わりごろまで天に輝いています. 
+                            2等星や3等星から構成され, 街明かりの中でも簡単に見つけることができるでしょう. <br>
+                            　この写真は故郷高知を代表する星の観測スポット, 四国カルスト天狗高原で撮影したものです. 
+                            天狗高原は近くに街明かりは一切なく, 肉眼でも素晴らしい天の川を望めるほどです. 
+                            この, 高知県が誇る最高の天体観測スポットを一度訪れてみてはいかがでしょうか？
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--No.01-->
+        <div id="modal01" class="modal js-modal">
+            <div class="modal__bg js-modal-close"></div>
+            <div class="modal__content">
+
+                <label class="js-modal-close" href="">閉じる✖</label>
+                <div class="text">
+                    <img src="images/Astrophoto/fire_tree.jpg" alt="">
+                    <div>
+                        <h3>燃える木・馬頭星雲</h3>
+                        <p>
+                            　この星雲は冬でもっとも有名な星座, オリオン座の真ん中の三つ星付近に位置しています. 
+                            正立でオリオン座を見たとき, 三つ星は右から, ミンタカ, アルニラム, アルニタクという名前がついています. <br>
+                            　この写真の中央やや右にある一番明るい星が, そのアルニタクです. アルニタクから見て上に位置しているオレンジ色の星雲が燃える木星雲, 
+                            左にある薄い赤と黒のコントラストのある星雲が馬頭星雲です. どちらも散光星雲に分類され, 濃いガス帯の中では恒星の形成が起こっています.
+                            燃える木星雲, 馬頭星雲の名前は, どちらもその形状に由来しています. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--トップに戻るボタン-->
+    <p id="to-top"><a href="#" class="to-top-button">トップに戻る</a></p>
+    
+    <!--フッター-->
+    <footer>
+        <p><small>Presented by @Ximu_astro</small></p>
+    </footer>
+
+
+</body>
